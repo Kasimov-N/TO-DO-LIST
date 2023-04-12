@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  padding: 30px 51px;
+  position: relative;
+  display: flex;
+}
+
+/* CATEGORY */
+
+.Category {
+  width: 20%;
+  height: 100%;
+  background: #FFFFFF;
+  border-right: 1px solid #D8D8D8;
+  position: relative;
+}
+
+.TextCategory {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.AllCategory {
+  width: 129px;
+  padding: 13px 10px;
+  background: #F3F3F3;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #B5B5B5;
+  margin-bottom: 10px;
+}
+
+.AllCategory::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #B5B5B5;
+}
+
+.Btn {
+  padding: 11px 8px;
+  width: 134px;
+  background: #F3F3F3;
+  border-radius: 11px;
+  left: 14px;
+  position: absolute;
+  display: flex;
+  gap: 8px;
+}
+
+.btn1 {
+  width: 13px;
+  height: 13px;
+  background: #EA5959;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn2 {
+  width: 13px;
+  height: 13px;
+  background: #10E0FF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn3 {
+  width: 13px;
+  height: 13px;
+  background: #FFFF3F;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn4 {
+  width: 13px;
+  height: 13px;
+  background: #7B2CBF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn5 {
+  width: 13px;
+  height: 13px;
+  background: #FFBA08;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn6 {
+  width: 13px;
+  height: 13px;
+  background: #22223B;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.all {
+  width: 129px;
+  display: flex;
+  gap: 6px;
+  margin-top: 32px;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.alc {
+  width: 13px;
+  height: 13px;
+  background: #EA5959;
+  border-radius: 10px;
+}
+
+.TextAll {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #EA5959;
+}
+
+.Groceries,
+.College,
+.Payments {
+  width: 149px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.groc {
+  width: 13px;
+  height: 13px;
+  background: #22223B;
+  border-radius: 10px;
+}
+
+.TextGroc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #525252;
+}
+
+.colc {
+  width: 13px;
+  height: 13px;
+  background: #7B2CBF;
+  border-radius: 10px;
+}
+
+.TextCollege {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #525252;
+}
+
+.Payc {
+  width: 13px;
+  height: 13px;
+  background: #10E0FF;
+  border-radius: 10px;
+}
+
+.texPay {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #525252;
+}
+
+
+/* ALL TASKS */
+
+.Tasks {
+  width: 80%;
+  height: 100%;
+  padding: 0 50px;
+  background: #FFFFFF;
+}
+nav{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.TextTask {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.img{
+  width: 40px;
+  display: none;
+}
+.img:hover .Menu{
+  height: 25%;
+  transition: .4s;
+
+}
+img{
+  width: 100%;
+  cursor: pointer;
+  transition: .5s;
+}
+img:active{
+  transform: rotate(-180deg);
+}
+.Menu{
+  position: absolute;
+  width: 90%;
+  height: 0%;
+  left: 50px;
+  background-color: #191919;
+  border-radius: 10px;
+}
+.item1{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.item1:hover{
+  background-color: black;
+  border-radius: 10px;
+}
+h3{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.AddTask {
+  width: 100%;
+  padding: 13px 10px;
+  background: #F3F3F3;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #B5B5B5;
+  margin-bottom: 35px;
+}
+
+.AddTask::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #B5B5B5;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.itemCheck {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #EA5959;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.itemText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #5A5A5A;
+  cursor: default;
+}
+
+.ItemBtn {
+  padding: 8px 25px;
+  background: #EA5959;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 880px) {
+  .Category {
+    display: none;
+  }
+
+  .Tasks {
+    width: 100%;
+    padding: 0 0px;
+  }
+  .img{
+    display: block;
+    cursor: pointer;
+  }
+  .Menu{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .Menu{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Category {
+    display: none;
+  }
+
+  .Tasks {
+    width: 100%;
+    padding: 0 0px;
+  }
+
+  .TextTask {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 37px;
+    color: #000000;
+  }
+  .Menu{
+    width: 75%;
+  }
+  .item {
+    justify-content: space-between;
+  }
+  .itemCheck{
+    width: 10%;
+  }
+  .itemText {
+    width: 50%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5A5A5A;
+    
+  }
+}
+@media screen and (max-width: 324px) {
+  .home{
+    overflow: scroll;
+  }
+}
